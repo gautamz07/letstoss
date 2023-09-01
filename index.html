@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-language" content="en-us">
   <meta name="description" content="An amazing vertual coin toss/flip app that assists you in all of your needs for a coin toss app.">
   <meta name="keywords" content="Coin Toss, Coin Flip">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +17,23 @@
   <meta name="theme-color" content="#db4938" />
 </head>
 <body>
+  <nav class="navigation">
+    <ul>
+      <li><a href="about.html">About us</a></li>
+    </ul>
+  </nav>
   <main>
-    <div class="coin-wrapper" id="coin-wrapper">
-      <span class="coin-toss head">
-        <!-- Heads -->
-      </span>
-      <span class="coin-toss tail">
-        Tails
-      </span>  
+    <div class="container__main">
+      <div class="coin-wrapper" id="coin-wrapper">
+        <span class="coin-toss head">
+          <!-- Heads -->
+        </span>
+        <span class="coin-toss tail">
+          Tails
+        </span>  
+      </div>
+      <button class="tossIt btn" id="tossIt">Lets Toss</button>
     </div>
-    <button class="tossIt" id="tossIt">Lets Toss</button>
   </main>
   <script src="scripts.js"></script>
 
