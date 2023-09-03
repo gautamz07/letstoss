@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+  --flipCorder: #000;
+  --bodyColor: #808080
+}
+
+h1,h2,h3 {
+  color: var(--flipCorder);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--bodyColor);
+}
+
+main {
+  /* margin: 0 ao; */
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70vw;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 0 5px rgba(0,0,0,.5);
+}
