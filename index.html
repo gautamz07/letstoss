@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
   <meta name="theme-color" content="#db4938" />
 </head>
 <body>
@@ -24,15 +24,28 @@
   </nav>
   <main>
     <div class="container__main">
-      <div class="coin-wrapper" id="coin-wrapper">
-        <span class="coin-toss head">
-          <!-- Heads -->
-        </span>
-        <span class="coin-toss tail">
-          Tails
-        </span>  
+
+      <div class="inner__wrapper inner__wrapper--padded">
+
+        <div class="coin-wrapper" id="coin-wrapper">
+          <span class="coin-toss" id="coin-toss">
+          <!-- <span class="coin-toss coin-toss--reverse" id="coin-toss"> -->
+            <div class="head">
+  
+            </div>
+          </span>
+        </div>
+        <button class="tossIt btn" id="tossIt">Lets Toss</button>
       </div>
-      <button class="tossIt btn" id="tossIt">Lets Toss</button>
+
+      <div class="inner__wrapper" style="min-height: 225px;">
+      
+        <h2 class="submain__header">Last 5 coin toss results</h2>
+        <ul class="lastfewresults" id="lastfewresults">
+        </ul>
+
+      </div>
+
     </div>
   </main>
   <script src="scripts.js"></script>
