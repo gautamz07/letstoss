@@ -27,7 +27,6 @@ const generateOutCome = () => {
   }
   const result =  (fraction > 0.5) ? outcomes[0] : outcomes[1]
   resultStr.push(result.text)
-  console.log(resultStr)
   return result
 }
 
@@ -38,6 +37,7 @@ document.getElementById('tossIt').addEventListener('click', () => {
   }
   document.getElementById('coin-toss').classList.add(outcomeObject.animation)
 });
+
 
 addEventListener("animationend", (event) => {
   if (document.getElementById('coin-toss').classList.contains('flipTails')) {
@@ -54,12 +54,32 @@ addEventListener("animationend", (event) => {
 
   if (resultStr.length > 5) {
     document.getElementById('lastfewresults').children[0].remove()
-    resultStr.splice(0, 1)
+    // resultStr.splice(0, 1)
     console.log('resultStr >>>')
     console.log(resultStr)
   }
 
+  const { heads, tails } = getCountOfHeadsAndTails(resultStr)
+  console.log(`tails --> ${tails} || heads --> ${heads}`)
+
 });
+
+function getCountOfHeadsAndTails(resultArr = []) {
+  if (resultArr.length) {
+    const heads = resultArr.filter(flipresult => flipresult === 'heads').length
+    const tails = resultArr.filter(flipresult => flipresult === 'tails').length
+    return {
+      heads,
+      tails 
+    }
+  }
+  return {
+    heads: 0,
+    tails: 0
+  }
+}
+
+
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {

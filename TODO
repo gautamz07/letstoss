@@ -1,14 +1,26 @@
-[] Add prefetch for image
-[] Number of heads and tails should show for every session
-[] disable button when animation is on going.
-[] improve button hover animation for toss.
+CMD + SHIFT + A - Archive ( go right to the top for this to work )
+CMD + D - Toggle done
 
-[] Add og:<tag> on page for social media linking :- refer --> https://www.searchenginejournal.com/important-tags-seo/156440/#close
+- Add prefetch for image
+- ( IMPORTANT ) Number of heads and tails should show for every session
+- disable button when animation is on going.
+- improve button hover animation for toss.
+- ( IMPORTANT ) - Add "Last result" above "last 5 results"
+- ( IMPORTANT ) - Add option for toss multiple times 
+  - Maybe add select option 
+  - use animation iteration for this maybe.
 
-[] Take some inspiration for css from :- https://www.furtive.co/
-[] Make on hover button that has 
-  [] Shows thunder sign 
-  [] Some text like "lets toss"
-  [] Thunder sign should slide in first , followed by text.
-  [] For reference :- https://rahuln.hashnode.dev/animate-button-using-css
-  [] ( STAGE 2 - NOT PRIORITY RN )For reference - inspiration - https://www.sliderrevolution.com/resources/css-button-hover-effects/
+- Add og:<tag> on page for social media linking :- refer --> https://www.searchenginejournal.com/important-tags-seo/156440/#close
+
+- Take some inspiration for css from :- https://www.furtive.co/
+- Make on hover button that has
+  - Shows thunder sign 
+  - Some text like "lets toss"
+  - Thunder sign should slide in first , followed by text.
+  - For reference :- https://rahuln.hashnode.dev/animate-button-using-css
+  - ( STAGE 2 - NOT PRIORITY RN )For reference - inspiration - https://www.sliderrevolution.com/resources/css-button-hover-effects/
+
+- Some good inspirations for text animations 
+  - https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/
+
+Archive:
