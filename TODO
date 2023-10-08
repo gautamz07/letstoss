@@ -1,0 +1,14 @@
+[] Add prefetch for image
+[] Number of heads and tails should show for every session
+[] disable button when animation is on going.
+[] improve button hover animation for toss.
+
+[] Add og:<tag> on page for social media linking :- refer --> https://www.searchenginejournal.com/important-tags-seo/156440/#close
+
+[] Take some inspiration for css from :- https://www.furtive.co/
+[] Make on hover button that has 
+  [] Shows thunder sign 
+  [] Some text like "lets toss"
+  [] Thunder sign should slide in first , followed by text.
+  [] For reference :- https://rahuln.hashnode.dev/animate-button-using-css
+  [] ( STAGE 2 - NOT PRIORITY RN )For reference - inspiration - https://www.sliderrevolution.com/resources/css-button-hover-effects/

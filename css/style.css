@@ -13,18 +13,22 @@ body {
 }
 
 .btn {
-  padding: 0.5rem 1rem;
-  background: #141414;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.35rem 1rem;
+  border: 2px solid #ccc;
+  border-color: #24b37f;
+  background-color: #25ba84;
   color: #fff;
-  border: 1px solid #141414;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.btn:hover {
-  background: #00a2ed;
-  border-color: #00a2ed;
+.btn:hover,
+.btn:active,
+.btn:focus {
+  color: #fff;
+  background-color: #21a777;
 }
 
 a {
@@ -61,15 +65,19 @@ button {
 main {
   perspective: 100px;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .navigation {
-  padding: 1rem;
+  /* padding: 1rem; */
+  font-size: 0.88rem;
   text-align: center;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+  box-shadow: 0 0 5px rgba(0,0,0,.05);
 }
 
 .navigation > ul  {
@@ -79,12 +87,31 @@ main {
 }
 
 .navigation > ul > li  {
-
+  display: inline-block;
 }
 
 .navigation > ul > li > a {
   text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 1rem;
 } 
+
+.navigation > ul > li > a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0; 
+  top: 100%;
+  top: calc(100% - 2px);
+  height: 2px;
+  background: orange;
+  transition: width 0.5s;
+}
+
+.navigation > ul > li > a:hover:after {
+  width: 100%;
+}
 
 .lastfewresults {
   padding: 0;
@@ -219,6 +246,21 @@ main {
    100% {
     transform: perspective(200px) scale(1) rotateX(-900deg);
    }
+}
+
+
+
+/* RESPONSIVE CODE */
+
+@media (max-width: 767px) {
+
+  .inner__wrapper {
+    margin: 1.5rem 0;
+  }
+
+  .container__main {
+    flex-direction: column;
+  }
 }
 
 /*
