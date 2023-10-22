@@ -7,11 +7,11 @@
   /*
     -- Color pallet
   */
-  --PrimaryGreen: #048b44;
-  --PrimaryYellow: #fbb404;
-  --SecoundryGreen: #5b9a2e;
-  --SecoundryYellow: #bfac14;
-  --PaleLimeGreen: #96a31d;
+  --primaryGreen: #048b44;
+  --primaryYellow: #fbb404;
+  --secoundryGreen: #5b9a2e;
+  --secoundryYellow: #bfac14;
+  --paleLimeGreen: #96a31d;
 }
 
 *,*:after,*:before {
@@ -60,30 +60,31 @@ body {
   font-size: 0.88rem;
     padding: 0.5rem;
     /* margin-top: 0.25rem; */
-    box-shadow: 0 0 5px rgba(0,0,0,.15);
+    /* box-shadow: 0 0 5px rgba(0,0,0,.15); */
     border-radius: 5px;
     /* font-weight: 300; */
     display: inline-block;
     /* max-width: 70px; */
     /* margin: 0.5rem auto; */
     text-transform: capitalize;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .box--heads {
-  background-color: #00D1ff;
+  border: 1px solid var(--secoundryYellow);
+  /* background-color: var(--secoundryYellow); */
 }
 
 .box--tails {
-  background-color: #77c3b4;
+  border: 1px solid var(--secoundryGreen);
+  /* background-color: var(--secoundryGreen); */
 }
 
 .btn {
   font-family: 'Roboto', sans-serif;
   padding: 0.35rem 1rem;
-  border: 2px solid #ccc;
-  border-color: #24b37f;
-  background-color: #25ba84;
+  border:2px solid var(--primaryGreen);
+  background-color: var(--primaryGreen);
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
@@ -94,7 +95,7 @@ body {
 .btn:active,
 .btn:focus {
   color: #fff;
-  background-color: #21a777;
+  background-color: var(--primaryGreen);
 }
 
 .btn--flipcoin {
@@ -146,7 +147,7 @@ a {
 }
 
 .submain__header {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1rem;
   margin-top: 0;
 }
@@ -215,7 +216,7 @@ main {
   top: 100%;
   top: calc(100% - 2px);
   height: 2px;
-  background: orange;
+  background: var(--primaryYellow);
   transition: width 0.5s;
 }
 
@@ -246,11 +247,11 @@ main {
 }
 
 .lastfewresults > li.heads {
-  background-color: #00D1ff;
+  background-color: var(--secoundryYellow);
 }
 
 .lastfewresults > li.tails {
-  background-color: #77c3b4;
+  background-color: var(--secoundryGreen);
 }
 
 .coin-wrapper {
@@ -281,7 +282,7 @@ main {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 
-  background-image: url('../rupee.png');
+  background-image: url('../heads.png');
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -419,7 +420,7 @@ main {
 
 
 .content__header:after {
-  background: linear-gradient(315deg, #ff0000,#ffc107);
+  background: linear-gradient(315deg, var(--primaryGreen), var(--primaryYellow));
   content: '';
   position: absolute;
   top: -2px;
@@ -481,7 +482,7 @@ main {
   left: 35%;
   right: 35%;
   height: 1px;
-  background: orange;
+  background: var(--primaryYellow);
 }
 
 .content__datalist > li > span:last-child {
