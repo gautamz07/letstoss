@@ -1,4 +1,4 @@
-const LetsToss = "lets-toss"
+const YoloToss = "lets-toss"
 const assets = [
   "/",
   "/index.html",
@@ -8,7 +8,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(LetsToss).then(cache => {
+    caches.open(YoloToss).then(cache => {
       cache.addAll(assets)
     })
   )
